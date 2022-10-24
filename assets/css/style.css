@@ -48,17 +48,59 @@ body{
 /* hero */
 .hero{
     background: #333;
-    max-height: 465px;
+    height: 465px;
+    position: relative;
+    color: var(--light-text-color);
+    text-align: center;
+    padding: 60px 0;
 }
 
 .hero .bg-image{
     position: absolute;
-    /* top: 0; */
+    top: 0;
     left: 0;
     width: 100%;
-    /* height: 100%; */
+    height: 100%;
     object-fit: cover;
 }
+.hero h1{
+    font-size: 52px;
+    margin: 0 0 30px;
+}
+
+.hero p {
+    font-size: 22px;
+    line-height: 1.636;
+    max-width:675px;
+    margin: 0 auto 50px;
+}
+
+.hero p strong{
+    font-weight: 700;
+}
+
+.btn{
+    display: inline-block;
+    border-radius: 4px;
+    line-height: 50px;
+    color: var(--btn-color);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 2.7778;
+    padding: 0 55px;
+    margin: 0 11px;
+}
+
+.btn--green{
+    background-color: var(--green);
+    box-shadow: 0 4px 0 var(--dark-green);
+}
+.btn--blue{
+    background-color: var(--blue);
+    box-shadow: 0 4px 0 var(--dark-blue);
+}
+  
+
 .logo {
     margin: 19px 18px 14px 0;
 }
@@ -118,3 +160,80 @@ body{
 .main{
     background: var(--body-bg);
 }
+
+/* footer */
+
+.footer{
+    padding: 36px 0;
+}
+
+
+
+.footer-nav{
+    display: flex;
+}
+
+.footer-nav .column{
+    width: 136px;
+}
+
+.footer-nav .title{
+    font-size: 12px;
+    margin: 0 0 15px;
+}
+
+.footer ul{
+    font-size: 12px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-nav ul li{
+    margin-bottom: 7px;
+}
+
+.footer-nav a{
+    color: var(--gray-200);
+}
+
+/* social */
+.soc{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.soc li{
+    margin-left: 20px;
+}
+.soc a{
+    color: var(--soc-link-color);
+    font-size: 20px;
+}
+
+.soc a:hover{
+    text-decoration: none;
+    color: var(--gray-200);
+}
+
+/* copyright */
+.copyright{
+    text-align: right;
+    line-height: 1.6667;
+    font-size: 12px;
+    color: var(--gray-200);
+}
+
+.copyright a{
+    color: var(--gray-200);
+    margin-left: 8px;
+}
+
+.footer .container{
+    display: flex;
+    justify-content: space-between;
+}
+  

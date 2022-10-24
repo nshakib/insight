@@ -157,10 +157,103 @@ body{
     background: #171a21 url('../images/bg-texture.jpg') repeat;
     color: var(--light-text-color);
 }
+/* main */
 .main{
     background: var(--body-bg);
 }
 
+.blocks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.blocks .block{
+    width: 351px;
+    margin-left: 43px;
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid var(--gray-100);
+}
+
+.blocks .block:first-child{
+    margin-left: 0;
+}
+
+.blocks img{
+    vertical-align: top;
+}
+
+.blocks image{
+    margin-bottom: 13px;
+}
+
+.blocks .person{
+    display: flex;
+}
+
+.blocks .photo{
+    width: 50px;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.blocks .phrase{
+    margin: 0 0 2px;
+    font-weight: 600;
+}
+
+.blocks .info{
+    color: var(--gray-200);
+    font-size: 14px;
+    margin: 0;
+}
+
+/* news */
+.news{
+    border-top: 2px solid var(--gray-100);
+    border-bottom: 2px solid var(--gray-100);
+    padding: 31px 0;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.news .one{
+    display: flex;
+    width: 352px;
+    margin-left: 42px;
+}
+
+.news .one:first-child{
+    margin-left: 0;
+}
+
+.news .img{
+    width: 89px;
+    flex-shrink: 0;
+    margin-right: 24px;
+}
+
+.news .text{
+    padding-top: 4px;
+}
+
+.news img{
+    border-radius: 50%;
+}
+
+.news time{
+    font-size: 14px;
+    color: var(--gray-200);
+}
+
+.news p{
+    margin: 4px 0 0;
+}
+.news p a{
+    color: var(--base-text-color);
+}
 /* footer */
 
 .footer{

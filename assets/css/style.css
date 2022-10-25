@@ -113,9 +113,6 @@ body{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
 }
 .nav a:hover{
     background-color: #13151a;
@@ -254,6 +251,62 @@ body{
 .news p a{
     color: var(--base-text-color);
 }
+
+/* feature */
+.featured{
+    padding: 26px 0;
+    margin-bottom: 34px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.featured ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.featured ul li{
+    margin-right: 40px;
+}
+
+.featured .title{
+    font-size: 16px;
+    margin: 0 20px 0 0;
+    font-weight: 400;
+}
+
+.featured a{
+    opacity: .5;
+}
+
+.featured a:hover{
+    opacity: 1;
+}
+
+a{
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+.btn:hover{
+    text-decoration: none;
+    opacity: .9;
+}
+
+.nav a:hover{
+    text-decoration: none;
+}
+
+.nav, .footer-nav ul, .soc, .featured ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 /* footer */
 
 .footer{
